@@ -1,0 +1,95 @@
+require('./bootstrap');
+require('axios-base-url')('http://localhost/');
+window.Vue = require('vue');
+import Vuelidate from 'vuelidate';
+import { Bar, Line } from 'vue-chartjs'
+window.Vue.use(Vuelidate);
+
+Vue.component(
+    'purchasesinvoices',
+    require('./components/purchasesinvoices/PurchasesInvoicesIndex.vue')
+);
+
+Vue.component(
+    'purchases',
+    require('./components/purchases/PurchasesIndex.vue')
+);
+Vue.component(
+    'purchasescreate',
+    require('./components/purchases/PurchasesCreate.vue')
+);
+//
+Vue.component(
+    'salesinvoices',
+    require('./components/salesinvoices/SalesInvoicesIndex.vue')
+);
+
+Vue.component(
+    'sales',
+    require('./components/sales/SalesIndex.vue')
+);
+Vue.component(
+    'salescreate',
+    require('./components/sales/SalesCreate.vue')
+);
+//
+Vue.component(
+    'suppliers',
+    require('./components/suppliers/SuppliersIndex.vue')
+);
+Vue.component(
+    'supplierscreate',
+    require('./components/suppliers/SuppliersCreate.vue')
+);
+//
+Vue.component(
+    'departments',
+    require('./components/departments/DepartmentsIndex.vue')
+);
+Vue.component(
+    'departmentscreate',
+    require('./components/departments/DepartmentsCreate.vue')
+);
+//
+Vue.component(
+    'items',
+    require('./components/items/ItemsIndex.vue')
+);
+Vue.component(
+    'itemscreate',
+    require('./components/items/ItemsCreate.vue')
+);
+//
+Vue.component(
+    'reportsperitem',
+    require('./components/reports/Items.vue')
+);
+Vue.component(
+    'reportsperpurchase',
+    require('./components/reports/Purchases.vue')
+);
+Vue.component(
+    'dashboard',
+    require('./components/dashboard/Index.vue')
+);
+Vue.component(
+    'inoutchart',
+    require('./components/dashboard/InOutChart.vue')
+);
+//
+Vue.component(
+    'locations',
+    require('./components/locations/LocationsIndex.vue')
+);
+Vue.component(
+    'locationscreate',
+    require('./components/locations/LocationsCreate.vue')
+);
+Vue.component(
+    'userscreate',
+    require('./components/users/UsersCreate.vue')
+);
+//
+const app = new Vue({
+    el: '#app'
+});
