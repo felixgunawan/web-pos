@@ -1,7 +1,7 @@
 # web-pos
 Web-Based Point-of-Sale (POS) System built with Laravel 5.5 and Vue.js
 
-Demo : http://polar-waters-98483.herokuapp.com
+Demo : http://web-pos-demo.herokuapp.com
 (Login use Username = admin_utama and Password = admin_utama)
 
 Installation : 
